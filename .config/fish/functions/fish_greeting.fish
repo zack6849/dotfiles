@@ -1,3 +1,3 @@
 function fish_greeting
-	say_fortune
+	cowsay -f tux (say_fortune)
 end
