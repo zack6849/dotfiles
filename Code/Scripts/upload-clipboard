@@ -1,0 +1,8 @@
+#!/bin/bash
+
+FILENAME=$(pwgen -s 13 1)
+FILENAME="$FILENAME.txt"
+FILE_PATH="$HOME/Uploader/Clipboard/$FILENAME"
+
+xclip -o >> $FILE_PATH
+screenshot-complete.sh "$FILENAME" "$FILE_PATH"

@@ -1,0 +1,2 @@
+#!/bin/sh
+'feh' '--image-bg' 'black' '--bg-fill' '/home/zack/Photos/Wallpapers/wallhaven-623148.jpg' 
