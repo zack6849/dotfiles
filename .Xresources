@@ -1,37 +1,91 @@
+
+!
+! Generated with :
+! XRDB2Xreources.py
+!
+*.foreground:  #e0dbb7
+*.background:  #2a1f1d
+*.cursorColor: #573d26
+!
+! Black
+*.color0:      #573d26
+*.color8:      #9b6c4a
+!
+! Red
+*.color1:      #be2d26
+*.color9:      #e84627
+!
+! Green
+*.color2:      #6ba18a
+*.color10:     #95d8ba
+!
+! Yellow
+*.color3:      #e99d2a
+*.color11:     #d0d150
+!
+! Blue
+*.color4:      #5a86ad
+*.color12:     #b8d3ed
+!
+! Magenta
+*.color5:      #ac80a6
+*.color13:     #d19ecb
+!
+! Cyan
+*.color6:      #74a6ad
+*.color14:     #93cfd7
+!
+! White
+*.color7:      #e0dbb7
+*.color15:     #fff9d5
+!
+! Bold, Italic, Underline
+*.colorBD:     #fff8d8
+!*.colorIT:
+!*.colorUL:
+
+
 URxvt.scrollBar: false
 URxvt.color12: rgb:5c/5c/ff
 UXTerm*termName: xterm-256color
+UXTerm*transparent:true
 UXTerm*faceName: Source Code Pro Nerd Font 
 UXTerm*metaSendsEscape: true
 UXTerm*faceSize: 11
+Xft*hinting:            full
+URxvt*background:       rgba:0000/0000/0000/cccc
+URxvt*font:	xft:Source Code Pro Nerd Font:size=6
+URxvt.transparent:   true
+URxvt.tintColor:     white
+URxvt.shading:       20 
 
 
-*foreground: #D7D0C7
-*background: #151515
+! # *foreground: #D7D0C7
+! # *background: #151515
 
-!black
-! *color0:     #AF875F
-! *color8:     #AF875F
-*color0:     #101010
-*color8:     #404040
-!red
-*color1:     #E84F4F
-*color9:     #D23D3D
-!green
-*color2:     #B8D68C
-*color10:    #A0CF5D
-!yellow
-*color3:     #E1AA5D
-*color11:    #F39D21
-!blue
-*color4:     #7DC1CF
-*color12:    #4E9FB1
-!magenta
-*color5:     #9B64FB
-*color13:    #8542FF
-!cyan
-*color6:     #6D878D
-*color14:    #42717B
-!white
-*color7:     #dddddd
-*color15:    #dddddd
+! # !black
+! # ! *color0:     #AF875F
+! # ! *color8:     #AF875F
+! # *color0:     #101010
+! # *color8:     #404040
+! # !red
+! # *color1:     #E84F4F
+! # *color9:     #D23D3D
+! # !green
+! # *color2:     #B8D68C
+! # *color10:    #A0CF5D
+! # !yellow
+! # *color3:     #E1AA5D
+! # *color11:    #F39D21
+! # !blue
+! # *color4:     #7DC1CF
+! # *color12:    #4E9FB1
+! # !magenta
+! # *color5:     #9B64FB
+! # *color13:    #8542FF
+! # !cyan
+! # *color6:     #6D878D
+! # *color14:    #42717B
+! # !white
+! # *color7:     #dddddd
+! # *color15:    #dddddd
