@@ -12,6 +12,8 @@ udiskie -2 &
 autocutsel -fork &
 autocutsel -selection PRIMARY -fork &
 
+killall dunst
+exec dunst &
 
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true'
 killall ssh-agent
