@@ -2,5 +2,4 @@
 
 RANDFILENAME=$(pwgen -s 13 1)
 FILENAME="$HOME/Uploader/Screenshots/$RANDFILENAME.png"
-
 scrot -s $FILENAME -e "screenshot-complete.sh $RANDFILENAME.png $FILENAME"
