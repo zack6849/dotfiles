@@ -21,15 +21,15 @@ super + Escape
 	pkill -USR1 -x sxhkd
 
 @ctrl + alt + Right
-	mpc next
+	sps next
 @ctrl + alt + Up
-	mpc toggle
+	sps toggle
 @ctrl + alt + Left
-	mpc prev
+	sps prev
 @ctrl + alt + Prior
-	mpc vol +6
+	sps vol +6
 @ctrl + alt + Next
-	mpc vol -5
+	sps vol -5
 #
 # bspwm hotkeys
 #

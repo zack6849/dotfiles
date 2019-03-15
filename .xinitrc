@@ -1,23 +1,24 @@
-#!/usr/bin/fish
-source /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
+#!/bin/bash
+sh ~/.screenlayout/layout.sh
+sh ~/.fehbg
 xsetroot -cursor_name left_ptr
-xset +fp $HOME/.fonts
 xset fp rehash
 xrdb $HOME/.Xresources
-xrandr --output DP-1 --left-of HDMI-1
-sh $HOME/.fehbg
+xrandr --output DP-1 --right-of DP-2
+
+#eval (/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+#export SSH_AUTH_SOCK
+
+source /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
 
 udiskie -2 &
 
 autocutsel -fork &
 autocutsel -selection PRIMARY -fork &
 
-killall dunst
+killall dunst 
 exec dunst &
-
-export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true'
-killall ssh-agent
-eval $(ssh-agent)
-exec bspwm 
-exec dropbox start
-set -gx SSH_AUTH_SOCK (gnome-keyring-daemon --start --components=pkcs11,secrets,ssh | grep "^SSH_AUTH_SOCK" | cut -d'=' -f2')
+exec compton &
+exec bspwm
+fix-fucking-java
+xterm
