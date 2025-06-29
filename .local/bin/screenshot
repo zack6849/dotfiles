@@ -1,0 +1,4 @@
+#!/bin/bash
+OUTPUT_DIR="/home/zack/Pictures/Screenshots"
+# hyprshot -s -m region -o $OUTPUT_DIR
+hyprshot -s -m region --clipboard-only
